@@ -2,11 +2,24 @@
 
 Pressure water level sensor interfaced via I2C - Open Source Hardware
 
-## To use
+## Getting Started
+
 
 Begin by installing the MCP3221 library either by using the Arduino IDE's Installation Wizard (Arduino Version >1.5) or simply download the library's ZIP folder from GITHUB, extract it, and copy the extraxcted MCP3221 folder to your Arduino 'libraries' folder.
 
+Then connect the Arduino using the wire guidelines for [I2C](https://www.arduino.cc/en/Reference/Wire).
+
 Next, open the sample .ino file in WLS_v1.0. Compile and run this. It will output pressure in KPa
+
+Then place tube from the sensor into tank of fluid you wish to measure. Do this such that __**THERE IS AIR IN THE TUBE ALL THE WAY TO THE POINT YOU WISH TO MEASURE.**__ If this is done incorrectly and fluid rises in tube, your results will be incorrect.
+
+
+Inline-style: 
+![Water Level Picture](images/FishTank_WaterLevel.png)
+
+
+
+
 
 Part used for water level senseing: https://www.nxp.com/docs/en/data-sheet/MPX5010.pdf
 
